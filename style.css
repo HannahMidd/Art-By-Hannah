@@ -4,3 +4,32 @@
     width: 100%;
     background-repeat: no-repeat;
 }
+
+.page-title {
+    display: block;
+    text-align: left;
+}
+
+.text {
+    font-family: Arial, sans-serif;
+    font-size: 75px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 0;
+    background-image: url(./assets/blue-paint-textured-background-aesthetic-diy-experimental-art_53876-133098.avif);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: moveBackground 180s infinite linear;
+    -webkit-animation: moveBackground 180s infinite linear;
+}
+
+@keyframes moveBackground {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 0 -200%;
+    }
+}
