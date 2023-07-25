@@ -6,7 +6,7 @@
 
 
 body {
-    background-image: url("./assets/bluepurple2.jpg");
+    background-image: url("./assets/white2.avif");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -23,14 +23,15 @@ body {
     font-family: Arial, sans-serif;
     font-size: 100px;
     font-weight: bold;
+    padding-top: 50px;
     letter-spacing: 2px;
-    color: white;
-        text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+    /* color: white; */
+        /* text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; */
 
 
 
-    /* Turn on for moving background image in text */
-    /* text-transform: uppercase;
+    /* Turn on for moving background image in text */ 
+    text-transform: uppercase;
     margin: 0;
     background-image: url(./assets/blue-oil-paint-strokes-textured_53876-96059.avif);
     background-clip: text;
@@ -46,7 +47,7 @@ body {
     }
     100% {
         background-position: 0 -200%;
-    } */
+    }
 }
 
 .text2 {
@@ -56,8 +57,25 @@ body {
     font-size: 55px;
     font-weight: bold;
     letter-spacing: 2px;
-    color: white;
-        text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+    /* color: white;
+        text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; */
+    text-transform: uppercase;
+    margin: 0;
+    background-image: url(./assets/blue-oil-paint-strokes-textured_53876-96059.avif);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: moveBackground 180s infinite linear;
+    -webkit-animation: moveBackground 180s infinite linear;
+}
+
+@keyframes moveBackground {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 0 -200%;
+    }
 }
 
 /* Applies to nav buttons */
