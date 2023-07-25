@@ -1,19 +1,18 @@
 :root {
     --color-1: rgb(4, 4, 145);
     --color-2: rgb(190, 160, 214);
-    --color-3: rgb(27, 107, 182);
+    --color-3: rgb(89, 168, 192);
 }
 
 
-body {
-    background-image: url("./assets/white2.avif");
-    background-size: cover;
-    background-repeat: no-repeat;
-}
 
 .page-title {
     display: block;
     text-align: left;
+    background-image: url("./assets/white2.avif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 800px;
 }
 
 .text {
@@ -21,24 +20,19 @@ body {
     display: flex;
     justify-content: center;
     font-family: Arial, sans-serif;
-    font-size: 100px;
+    font-size: 120px;
     font-weight: bold;
-    padding-top: 50px;
+    padding-top: 100px;
     letter-spacing: 2px;
-    /* color: white; */
-        /* text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; */
-
-
-
-    /* Turn on for moving background image in text */ 
     text-transform: uppercase;
     margin: 0;
-    background-image: url(./assets/blue-oil-paint-strokes-textured_53876-96059.avif);
+    background-image: url(./assets/colorful-liquid-marble-background-abstract-flowing-texture-experimental-art_53876-104553.avif);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
     animation: moveBackground 180s infinite linear;
     -webkit-animation: moveBackground 180s infinite linear;
+
 }
 
 @keyframes moveBackground {
@@ -61,7 +55,7 @@ body {
         text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; */
     text-transform: uppercase;
     margin: 0;
-    background-image: url(./assets/blue-oil-paint-strokes-textured_53876-96059.avif);
+    background-image: url(./assets/colorful-liquid-marble-background-abstract-flowing-texture-experimental-art_53876-104553.avif);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
@@ -100,6 +94,7 @@ body {
 }
 
 .art-container {
-    display: flex;
-    justify-content: center;
+    background-color: var(--color-3);
+    background-repeat: no-repeat;
+    height: auto;
 }
