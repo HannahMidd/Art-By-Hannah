@@ -4,25 +4,24 @@
     --color-3: rgb(89, 168, 192);
 }
 
-
-
 .page-title {
-    display: block;
-    text-align: left;
-    background-image: url("./assets/white2.avif");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('./assets/white2.avif');
     background-size: cover;
     background-repeat: no-repeat;
-    height: 800px;
+    height: 100vh;
 }
 
 .text {
-    margin-top: 20px;
     display: flex;
     justify-content: center;
+    align-items: center;
     font-family: Arial, sans-serif;
     font-size: 120px;
     font-weight: bold;
-    padding-top: 100px;
     letter-spacing: 2px;
     text-transform: uppercase;
     margin: 0;
@@ -32,7 +31,6 @@
     color: transparent;
     animation: moveBackground 180s infinite linear;
     -webkit-animation: moveBackground 180s infinite linear;
-
 }
 
 @keyframes moveBackground {
@@ -51,8 +49,6 @@
     font-size: 55px;
     font-weight: bold;
     letter-spacing: 2px;
-    /* color: white;
-        text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; */
     text-transform: uppercase;
     margin: 0;
     background-image: url(./assets/colorful-liquid-marble-background-abstract-flowing-texture-experimental-art_53876-104553.avif);
@@ -77,10 +73,11 @@
     background-color: transparent;
     color: white;
     margin-left: 5px;
+    outline: 2px solid var(--color-1); 
 }
 
-.btn :hover {
-    background-color: var(--color-1);
+.btn:hover {
+    background-color: var(--color-1); 
 }
 
 /* Applies to about me section and headshot */
@@ -93,8 +90,50 @@
     height: 500px;
 }
 
+#arrow-btn {
+    font-size: 24px;
+    margin-top: 300px; /* Add some space between the text and the button */
+    width: 60px; /* Adjust the width and height to create a circle */
+    height: 60px;
+    border-radius: 50%; /* Makes the button circular */
+    background-color: var(--color-3); /* Add a background color to the button */
+    color: white; /* Add a color to the arrow icon */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none; /* Optional - to remove the default button border */
+    outline: none; /* Optional - to remove the focus outline when clicked */
+}
+
+#arrow-btn:hover,
+#arrow-btn:focus {
+    background-color: var(--color-1);
+    /* Add different colors or effects when the button is hovered or focused */
+}
+
+
+
+
+
+
+
+
 .art-container {
     background-color: var(--color-3);
     background-repeat: no-repeat;
-    height: auto;
+    padding: 40px;
+    /* height: 100vh; */
+    
 }
+
+/* .art-container .col-lg-3 {
+    height: 300px; 
+}
+
+
+.art-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This will make the images fill the containers while preserving their aspect ratios */
+    /* padding: 10px; */
+/* } */ */
