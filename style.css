@@ -149,7 +149,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.5); /* Slightly transparent white background */
+    background-color: rgba(255, 255, 255, 0.7); /* Slightly transparent white background */
     text-align: center; /* Center the text horizontally */
 }
 
@@ -158,4 +158,30 @@
     font-weight: bold;
     color: #000;
     padding: 20px;
+}
+
+.white-moving-bg {
+    display: flex;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    font-size: 100px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 0;
+    background-image: url(./assets/blacknavyink.avif);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: moveBackground 180s infinite linear;
+    -webkit-animation: moveBackground 180s infinite linear;
+}
+
+@keyframes moveBackground {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 0 -200%;
+    }
 }
