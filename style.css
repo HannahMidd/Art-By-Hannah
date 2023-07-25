@@ -76,3 +76,12 @@ body {
     height: 300px;
     margin-left: 30px;
 }
+
+.mainPageArt {
+    height: 500px;
+}
+
+.art-container {
+    display: flex;
+    justify-content: center;
+}
