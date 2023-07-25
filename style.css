@@ -1,7 +1,13 @@
-#hero {
-    background-image: url("./assets/blue-paint-textured-background-aesthetic-diy-experimental-art_53876-133098.avif");
-    height: 300px;
-    width: 100%;
+:root {
+    --color-1: rgb(4, 4, 145);
+    --color-2: rgb(190, 160, 214);
+    --color-3: rgb(27, 107, 182);
+}
+
+
+body {
+    background-image: url("./assets/bluepurple2.jpg");
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
@@ -11,13 +17,22 @@
 }
 
 .text {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
     font-family: Arial, sans-serif;
-    font-size: 75px;
+    font-size: 100px;
     font-weight: bold;
     letter-spacing: 2px;
-    text-transform: uppercase;
+    color: white;
+        text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+
+
+
+    /* Turn on for moving background image in text */
+    /* text-transform: uppercase;
     margin: 0;
-    background-image: url(./assets/blue-paint-textured-background-aesthetic-diy-experimental-art_53876-133098.avif);
+    background-image: url(./assets/blue-oil-paint-strokes-textured_53876-96059.avif);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
@@ -31,5 +46,33 @@
     }
     100% {
         background-position: 0 -200%;
-    }
+    } */
+}
+
+.text2 {
+    display: flex;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    font-size: 55px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: white;
+        text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+
+/* Applies to nav buttons */
+.btn {
+    background-color: transparent;
+    color: white;
+    margin-left: 5px;
+}
+
+.btn :hover {
+    background-color: var(--color-1);
+}
+
+/* Applies to about me section and headshot */
+#headshot {
+    height: 300px;
+    margin-left: 30px;
 }
