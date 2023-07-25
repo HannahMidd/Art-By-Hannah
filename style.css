@@ -122,18 +122,40 @@
     background-color: var(--color-3);
     background-repeat: no-repeat;
     padding: 40px;
-    /* height: 100vh; */
+    position: relative;
     
 }
 
 /* .art-container .col-lg-3 {
     height: 300px; 
-}
+} */
 
 
 .art-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* This will make the images fill the containers while preserving their aspect ratios */
-    /* padding: 10px; */
-/* } */ */
+    width: 15vh;
+    height: 35vh;
+    object-fit: cover;
+    padding: 10px;
+}
+
+/* Applies to gallery section and "shop originals text" */
+.shop-originals-overlay {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center the element itself */
+    width: 80%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.5); /* Slightly transparent white background */
+    text-align: center; /* Center the text horizontally */
+}
+
+.shop-originals-overlay h2 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #000;
+    padding: 20px;
+}
