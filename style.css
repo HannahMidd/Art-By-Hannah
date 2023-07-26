@@ -312,5 +312,8 @@ nav i {
 
 .gallery-banner {
 color: black;
-padding: 30px;
+padding: 40px;
+display: flex;
+justify-content: center;
+align-items: center;
 }
