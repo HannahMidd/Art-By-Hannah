@@ -189,7 +189,9 @@
 
 /* About Me Section */
 
-.aboutMeText {
+.aboutMeTitle {
+    color: black;
+    padding-top: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -199,21 +201,6 @@
     letter-spacing: 2px;
     text-transform: uppercase;
     margin: 0;
-    background-image: url('./assets/marble.avif');
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    animation: moveBackground 180s infinite linear;
-    -webkit-animation: moveBackground 180s infinite linear;
-}
-
-@keyframes moveBackground {
-    0% {
-        background-position: 0 0;
-    }
-    100% {
-        background-position: 0 -200%;
-    }
 }
 
 .AboutMeSection {
@@ -221,4 +208,19 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 1000px;
+}
+
+.about-me-container {
+    width: 90%; 
+    margin: 0 auto; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.6); 
+    text-align: center; 
+    padding: 20px; 
+}
+
+#about-me-text {
+    padding: 50px;
 }
