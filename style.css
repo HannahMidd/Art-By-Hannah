@@ -110,12 +110,14 @@
     font-weight: bolder;
 }
 
-/* Applies to FB and IG icons */
-
-nav i {
-    margin-left: 10px;
-    margin-right: 10px;
+.navbar-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 0;
+    margin-top: 10px;
 }
+
 
 /* Applies to about me section and headshot */
 #headshot {
@@ -317,3 +319,36 @@ display: flex;
 justify-content: center;
 align-items: center;
 }
+
+/* MEDIA QUERIES */
+/* Custom CSS to hide social icons on smaller screens when the dropdown is open */
+@media (max-width: 991.98px) {
+    .navbar-collapse.show .hide-on-mobile {
+        display: none;
+    }
+    .navbar-nav.ml-auto.show .hide-on-desktop {
+        display: flex;
+    }
+}
+
+/* Show social icons on smaller screens in the dropdown */
+@media (max-width: 991.98px) {
+    .navbar-collapse:not(.show) .hide-on-mobile {
+        display: flex;
+    }
+    .navbar-nav.ml-auto:not(.show) .hide-on-desktop {
+        display: none;
+    }
+}
+
+/* Show social icons on larger screens in the navbar */
+@media (min-width: 992px) {
+    .hide-on-desktop {
+        display: flex;
+    }
+    .hide-on-mobile {
+        display: none;
+    }
+}
+
+
