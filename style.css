@@ -141,9 +141,7 @@
     margin-left: 30px;
 }
 
-.mainPageArt {
-    height: 500px;
-}
+
 
 #arrow-btn {
     font-size: 24px;
@@ -166,11 +164,13 @@
 }
 
 .art-container {
+    height: auto;
     background-image: url('./assets/graybackground.avif');
     background-size: cover;
     background-repeat: no-repeat;
     padding: 40px;
     position: relative;
+
 }
 
 .art-container img {
@@ -178,6 +178,7 @@
     height: 35vh;
     object-fit: cover;
     padding: 10px;
+
 }
 
 /* Applies to gallery section and "shop originals text" */
@@ -336,7 +337,9 @@ justify-content: center;
 align-items: center;
 }
 
-/* MEDIA QUERIES */
+/* -------------------- MEDIA QUERIES-------------------------------- */
+
+
 /* Custom CSS to hide social icons on smaller screens when the dropdown is open */
 @media (max-width: 991.98px) {
     .navbar-collapse.show .hide-on-mobile {
@@ -367,4 +370,81 @@ align-items: center;
     }
 }
 
+/* ---------------------Home page media queries-------------------- */
+/* Media query title and arrow */
+@media (max-width: 842.98px) {
 
+    .page-title {
+        height: 400px;
+    }
+  .text {
+    font-size: 40px; /* Adjust the font size as needed */
+  }
+
+  .text2 {
+    font-size: 15px; /* Adjust the font size as needed */
+  }
+
+  #arrow-btn {
+    font-size: 18px; /* Adjust the font size as needed */
+    margin-top: 50px; /* Adjust the margin as needed */
+    width: 60px;
+    height: 60px;
+  }
+}
+
+/* Media query for gallery section of home page */
+@media (max-width: 767.98px) {
+  .art-container .row {
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0px; /* gap between items */
+  }
+
+  .art-container img {
+    width: 100%; /* Set the width to fill the column */
+    height: auto; /* Maintain aspect ratio */
+    padding: 0px;
+  }
+}
+
+/* Media query for overlay and shop title */
+@media (max-width: 767.98px) {
+  .art-container .shop-originals-overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80%; /* Adjust the max-width as needed */
+    height: 50%; /* Adjust the height as needed */
+    background-color: rgba(255, 255, 255, 0.7);
+    text-align: center; /* Center the text horizontally and vertically */
+  }
+
+  .art-container .shop-originals-overlay h1 {
+    font-size: 24px; /* Adjust the font size as needed for smaller screens */
+  }
+}
+
+/* About me section media queries */
+
+@media (max-width: 767.98px) {
+  .about-me-container {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .aboutMeTitle {
+    font-size: 35px;
+  }
+  #headshot {
+    width: 50%; /* Adjust the percentage as needed */
+    height: auto; /* Allow the height to adjust proportionally */
+    margin: 0 auto; /* Center the image horizontally */
+  }
+
+  #about-me-text {
+    font-size: 16px; /* Adjust the font size as needed */
+    padding: 20px;
+  }
+}
